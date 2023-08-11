@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.ts",
   "scripts": {
-    "start": "nodemon app.ts",
+    "dev": "NODE_ENV=dev nodemon src/app.ts",
+    "prod": "NODE_ENV=prod nodemon src/app.ts",
+    "start": "nodemon src/app.ts",
     "build": "tsc --project ./"
   },
   "keywords": [
@@ -20,6 +22,12 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "@types/express-validator": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-body-parser-error-handler": "^1.0.7",
+    "express-validator": "^7.0.1",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.2"
   }
 }

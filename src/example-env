@@ -1,0 +1,7 @@
+ENV="production" | "development"
+DB_USER = ""
+DB_PWD = ""
+DB_PORT = ""
+DB_DOMAIN = ""
+
+PORT = 3000
